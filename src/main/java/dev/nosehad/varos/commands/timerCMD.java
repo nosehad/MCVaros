@@ -25,18 +25,18 @@ public class timerCMD implements CommandExecutor, TabExecutor {
                     Varos server = Varos.current;
                     if(server.timerToggled ( player )) {
                         server.toggleTimer ( player );
-                        console.send ( player, "§7Du hast den Timer §cdeaktiviert§7." );
+                        console.send ( player, "§7You have §cdeactivated §7the timer." );
                     } else {
                         server.toggleTimer ( player );
-                        console.send ( player, "§7Du hast den Timer §aaktiviert§7." );
+                        console.send ( player, "§aYou have §aactivated §7the timer." );
                     }
                 }
             }
             else {
-                console.send ( player, "§7Benutze /Timer toggle um dir den Timer anzeigen zu lassen. " );
+                console.send ( player, "§7Use §a/timer toggle §7to show the timer." );
             }
         } else {
-            Bukkit.getLogger ().info ( "Fehlgeschlagen, dieser Command kann nur als Spieler ausgeführt werden." );
+            Bukkit.getLogger ().info ( "Action failed, this command can only be executed by a player." );
         }
         return false;
     }
