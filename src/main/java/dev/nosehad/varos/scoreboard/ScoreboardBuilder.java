@@ -26,7 +26,7 @@ public abstract class ScoreboardBuilder {
             Objects.requireNonNull ( this.scoreboard.getObjective ( "display" ) ).unregister();
         }
 
-        this.objective = this.scoreboard.registerNewObjective ( "display", "dummy", Component.text ( displayName ));
+        this.objective = this.scoreboard.registerNewObjective ( "display", "dummy", displayName);
         this.objective.setDisplaySlot(DisplaySlot.SIDEBAR);
         this.createScoreboard();
     }
