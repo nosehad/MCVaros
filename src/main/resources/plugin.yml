@@ -1,0 +1,22 @@
+name: varos_by_itznosehad
+version: '${project.version}'
+main: dev.nosehad.varos.Main
+api-version: 1.18
+authors: [itznosehad_]
+description: Varos plugin by itznosehad
+website: https://nosehad.com
+
+commands:
+  gc:
+  info:
+  timer:
+  verify:
+  life:
+  lifes:
+  leben:
+  varos:
+  l:
+  team:
+  teams:
+  lobby:
+  spawn:
