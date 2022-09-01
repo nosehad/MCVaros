@@ -2,21 +2,21 @@
 **Simple MC Varos Plugin for Paper 1.18.2+**
 
 **__Features__**\
- *a new and innovative team system\
- *great configuration possibilities\
- *bug and glitch free experience\
- *usefull commands\
- *open source plugin\
- *and way more...
+ -a new and innovative team system\
+ -great configuration possibilities\
+ -bug and glitch free experience\
+ -usefull commands\
+ -open source plugin\
+ -and way more...
  
  **__Commands__**\
- */varos\
- */timer\
- */verify\
- */info\
- */lifes\
- */spawn\
- */team
+ -/varos\
+ -/timer\
+ -/verify\
+ -/info\
+ -/lifes\
+ -/spawn\
+ -/team
  
 **__Config__**
 ```
