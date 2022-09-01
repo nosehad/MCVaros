@@ -18,7 +18,8 @@
  */spawn\
  */team
  
- **__Config__**
+ <details> 
+ <summary>**__Config__**</summary>
 ```
 ## set on true to enable 1.8 combat ##
 old_combat: true
@@ -54,6 +55,7 @@ max_team_players: 2
 
 ~Varos Plugin by _itznosehad_
 ```
+</details>
 
 
 **__About__**\
