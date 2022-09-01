@@ -1,7 +1,7 @@
 # MCVaros
-Simple MC Varos Plugin for Paper 1.18.2+
+**Simple MC Varos Plugin for Paper 1.18.2+**
 
-**Features**\
+**__Features__**\
  *a new and innovative team system\
  *great configuration possibilities\
  *bug and glitch free experience\
@@ -9,7 +9,7 @@ Simple MC Varos Plugin for Paper 1.18.2+
  *open source plugin\
  *and way more...
  
- **Commands**\
+ **__Commands__**\
  */varos\
  */timer\
  */verify\
@@ -18,7 +18,7 @@ Simple MC Varos Plugin for Paper 1.18.2+
  */spawn\
  */team
  
- **Config**
+ **__Config__**
 ```
 ## set on true to enable 1.8 combat ##
 old_combat: true
@@ -56,7 +56,7 @@ max_team_players: 2
 ```
 
 
-**About**\
+**__About__**\
 MCVaros is an simple Varos event plugin for minecraft,
 which offers you a great and innovative team system
 and an great playing experience.
