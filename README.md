@@ -18,8 +18,9 @@ Simple MC Varos Plugin for Paper 1.18.2+
  */spawn\
  */team
  
- **Config**\
-```## set on true to enable 1.8 combat ##
+ **Config**
+```
+## set on true to enable 1.8 combat ##
 old_combat: true
 
 ## /verify <admin_passwort> to be able to enter admin commands ##
@@ -51,7 +52,8 @@ max_team_players: 2
 
 ## set the spawn by using /varos setspawn ##
 
-~Varos Plugin by _itznosehad_```
+~Varos Plugin by _itznosehad_
+```
 
 
 **About**\
