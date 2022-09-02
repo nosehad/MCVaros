@@ -33,24 +33,24 @@ public class TimerThread extends Thread implements Serializable {
 
     public void setRunning ( boolean running ) {
         this.running = running;
-        if(shown) {
-            if ( running ) {
-                if ( timer_days != 0 ) {
-                    targets.forEach ( player -> player.spigot ( ).sendMessage ( ChatMessageType.ACTION_BAR , new TextComponent ( "§8§l⬝§r §7Time: §a§l" + timer_days + "d " + timer_hours + "h " + timer_minutes + "m " + timer_seconds + "s §r§8§l⬝" ) ) );
-                }
-                else if ( timer_hours != 0 ) {
-                    targets.forEach ( player -> player.spigot ( ).sendMessage ( ChatMessageType.ACTION_BAR , new TextComponent ( "§8§l⬝§r §7Time: §a§l" + timer_hours + "h " + timer_minutes + "m " + timer_seconds + "s §r§8§l⬝" ) ) );
-                }
-                else if ( timer_minutes != 0 ) {
-                    targets.forEach ( player -> player.spigot ( ).sendMessage ( ChatMessageType.ACTION_BAR , new TextComponent ( "§8§l⬝§r §7Time: §a§l" + timer_minutes + "m " + timer_seconds + "s §r§8§l⬝" ) ) );
-                }
-                else {
-                    targets.forEach ( player -> player.spigot ( ).sendMessage ( ChatMessageType.ACTION_BAR , new TextComponent ( "§8§l⬝§r §7Time: §a§l" + timer_seconds + "s §r§8§l⬝" ) ) );
-                }
+        if(!shown)
+            return;
+        if ( !running ) {
+            if ( timer_days != 0 ) {
+                targets.forEach ( player -> player.spigot ( ).sendMessage ( ChatMessageType.ACTION_BAR , new TextComponent ( "§8§l⬝§r §7Time: §a§l" + timer_days + "d " + timer_hours + "h " + timer_minutes + "m " + timer_seconds + "s §r§8§l⬝" ) ) );
+            }
+            else if ( timer_hours != 0 ) {
+                targets.forEach ( player -> player.spigot ( ).sendMessage ( ChatMessageType.ACTION_BAR , new TextComponent ( "§8§l⬝§r §7Time: §a§l" + timer_hours + "h " + timer_minutes + "m " + timer_seconds + "s §r§8§l⬝" ) ) );
+            }
+            else if ( timer_minutes != 0 ) {
+                targets.forEach ( player -> player.spigot ( ).sendMessage ( ChatMessageType.ACTION_BAR , new TextComponent ( "§8§l⬝§r §7Time: §a§l" + timer_minutes + "m " + timer_seconds + "s §r§8§l⬝" ) ) );
             }
             else {
-                targets.forEach ( player -> player.spigot ( ).sendMessage ( ChatMessageType.ACTION_BAR , new TextComponent ( "§8§l⬝§r §7Timer §c§lpaused §r§8§l⬝" ) ) );
+                targets.forEach ( player -> player.spigot ( ).sendMessage ( ChatMessageType.ACTION_BAR , new TextComponent ( "§8§l⬝§r §7Time: §a§l" + timer_seconds + "s §r§8§l⬝" ) ) );
             }
+        }
+        else {
+            targets.forEach ( player -> player.spigot ( ).sendMessage ( ChatMessageType.ACTION_BAR , new TextComponent ( "§8§l⬝§r §7Timer §c§lpaused §r§8§l⬝" ) ) );
         }
     }
 
