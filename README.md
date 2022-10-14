@@ -60,5 +60,4 @@ max_team_players: 2
 MCVaros is an simple Varos event plugin for minecraft,
 which offers you a great and innovative team system
 and an great playing experience.
-I created it for a small german server and found 
-now exported and translated it.
+I created it for a small german server and now exported and translated it.
