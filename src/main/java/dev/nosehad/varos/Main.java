@@ -31,8 +31,8 @@ public class Main extends JavaPlugin {
         this.getCommand ( "info" ).setExecutor ( new infoCMD () );
         this.getCommand ( "Timer" ).setExecutor ( new timerCMD () );
         this.getCommand ( "verify" ).setExecutor ( new verifyCMD () );
-        this.getCommand ( "life" ).setExecutor(new lifeCMD () );
-        this.getCommand ( "lifes" ).setExecutor(new lifeCMD () );
+        this.getCommand ( "live" ).setExecutor(new lifeCMD () );
+        this.getCommand ( "lives" ).setExecutor(new lifeCMD () );
         this.getCommand ( "leben" ).setExecutor(new lifeCMD () );
         this.getCommand ( "varos" ).setExecutor(new varosCMD () );
         this.getCommand ( "spawn" ).setExecutor(new spawnCMD () );
