@@ -1,4 +1,4 @@
-package dev.nosehad.varos.utils;
+package com.nosehad.ingamedownloader.Utils;
 
 import org.apache.commons.lang.StringUtils;
 
@@ -27,7 +27,9 @@ public class YMLConfiguration {
         for (String line : lines) {
             if( line.contains ( target ) ) {
                 if(line.contains ( "\"" )) {
-                    content = StringUtils.substringBetween ( line, "\"","\"" );
+                    int startIndex = line.indexOf("\"") + 1;
+                    int endIndex = line.indexOf("\"", startIndex);
+                    content = line.substring(startIndex, endIndex);
                 }
                 else {
                     content = line.replaceAll ( target,"" ).replaceAll ( " ", "" ).replaceAll ( ":", "" ).replaceAll ( "=", "" );
@@ -37,6 +39,6 @@ public class YMLConfiguration {
         if(content != null)
             return content;
         else
-            throw new ExecutionException ( "Line " + target + " wasn't found!", new ExecutionException ( new Throwable ( "Please check, if the config was harmed." ) ) );
+            throw new ExecutionException ( "Zeile " + target + " wurde nicht gefunden!", new ExecutionException ( new Throwable ( "Bitte überprüfe, ob du die Config beschädigt hast." ) ) );
     }
 }
