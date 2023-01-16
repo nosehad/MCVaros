@@ -37,6 +37,6 @@ public class YMLConfiguration {
         if(content != null)
             return content;
         else
-            throw new ExecutionException ( "Zeile " + target + " wurde nicht gefunden!", new ExecutionException ( new Throwable ( "Bitte überprüfe, ob du die Config beschädigt hast." ) ) );
+            throw new ExecutionException ( "Line " + target + " wasn't found!", new ExecutionException ( new Throwable ( "Please check, if the config was harmed." ) ) );
     }
 }
